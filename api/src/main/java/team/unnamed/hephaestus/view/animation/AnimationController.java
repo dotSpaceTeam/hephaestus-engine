@@ -69,7 +69,7 @@ public interface AnimationController {
      * Passes to the next animation frame using
      * the given model yaw
      *
-     * @param yaw The model yaw
+     * @param yaw the model yaw
      * @since 1.0.0
      */
     void tick(double yaw);
