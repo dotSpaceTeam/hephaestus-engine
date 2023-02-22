@@ -74,6 +74,13 @@ public interface AnimationController {
      */
     void tick(double yaw);
 
+    /**
+     * Get current running {@link Animation} of controller.
+     *
+     * @return instance of current running {@link Animation}.
+     */
+    Animation currentAnimation();
+
     static AnimationController create(BaseModelView<?> view) {
         return new DetailedAnimationController(view);
     }
