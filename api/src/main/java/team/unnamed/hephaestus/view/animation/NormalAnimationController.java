@@ -174,6 +174,11 @@ class NormalAnimationController implements AnimationController {
         }
     }
 
+    @Override
+    public Animation currentAnimation() {
+        return this.current;
+    }
+
     private void nextAnimation() {
         if ((current = queue.pollLast()) != null) {
             createIterators(current);
